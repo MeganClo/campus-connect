@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -26,12 +26,12 @@ export default function Funavatar(props) {
 	return (
 		<div className={classes.root}>
 			{props.avatars.map(item => (
-				<div>
-					<Tooltip title={item.tip} placement="top">
+				<div key={item.id}>
+					<Tooltip title={item.tip} placement="top" >
 						<Button
 							className={classes.box}
 							onClick={event => props.onClick(item.image, item.nameStyle)}
-							key={item.id}
+							
 						>
 							<Avatar alt={item.title} src={item.image} key={item.key} />
 						</Button>

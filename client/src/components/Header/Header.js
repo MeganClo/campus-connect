@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
 	AppBar,
 	Toolbar,
 	List,
 	Typography,
-	FormControlLabel,
 	Switch,
 	Hidden
 } from '@material-ui/core';
@@ -20,7 +19,7 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import CreateIcon from '@material-ui/icons/Create';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import ChatIcon from '@material-ui/icons/Chat';
-import { findLastKey } from 'lodash';
+// import { findLastKey } from 'lodash';
 
 const Header = props => {
 	const useStyles = makeStyles(theme => ({

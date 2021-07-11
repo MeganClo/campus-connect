@@ -1,4 +1,4 @@
-import React, { useState, createElement } from 'react';
+import React, { useState } from 'react';
 import Box from '@material-ui/core/Box';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -11,7 +11,7 @@ import businessLogos from '../Funavatar/businesslogos';
 import { useAuthState } from '../../utils/auth';
 import { Link } from 'react-router-dom';
 import { CREATE_PROFILE } from '../../utils/mutations';
-import { useLazyQuery, useMutation } from '@apollo/client';
+import { useMutation } from '@apollo/client';
 // import FunModal, { handleFunModal } from '../FunModal';
 import Avatar from '@material-ui/core/Avatar';
 const useStyles = makeStyles(theme => ({
@@ -104,7 +104,7 @@ const useStyles = makeStyles(theme => ({
 	}
 }));
 
-const avatars = [];
+
 
 const Onboard = () => {
 	const classes = useStyles();
@@ -173,7 +173,7 @@ const Onboard = () => {
 			<Grid container>
 				<Typography component="h1" className={classes.header}>
 					{' '}
-					{user?.data?.username}'s Profile{' '}
+					{user.data.username}'s Profile{' '}
 				</Typography>{' '}
 			</Grid>
 

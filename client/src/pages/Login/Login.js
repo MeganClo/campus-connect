@@ -161,7 +161,7 @@ const Login = () => {
 	};
 
 	return (
-		<Grid container justify="center">
+		<Grid container justifyContent="center">
 			<Box
 				component="form"
 				className={classes.form}
