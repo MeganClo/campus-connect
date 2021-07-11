@@ -93,7 +93,7 @@ const Footer = props => {
 				<MaximizeIcon className={classes.icon} />
 				<MaximizeIcon className={classes.icon} />
 			</div>
-			<Grid container justify="space-evenly">
+			<Grid container justifyContent="space-evenly">
 				{creators.map(creator => {
 					return (
 						<div key={creator.name} className={classes.creators}>

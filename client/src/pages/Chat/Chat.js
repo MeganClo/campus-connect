@@ -93,7 +93,7 @@ const Chat = props => {
 			});
 		}
 	}, [reactionError, reactionData]);
-	const [open, setOpen] = useState(false);
+	// const [open, setOpen] = useState(false);
 
 	return (
 		<div className="messenger">
